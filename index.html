@@ -335,6 +335,7 @@ $(document).ready(function() {
               console.log("link name: " + $(this).text() + " arg name: " + arg);
               console.log($(this).text().toLowerCase()==arg);
               if($(this).text().toLowerCase()==arg) {
+                console.log("SUCCESS!");
                 $(this).click();
               }
       	    } else if($(this)[0].tagName == "BUTTON") {
