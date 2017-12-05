@@ -18,18 +18,38 @@
 <a href="google.com">Google</a><br>
 <a href="cmu.edu">CMU</a><br>
 
-  <div class="right">
-    <button id="start_button" onclick="startButton(event)">
-      <img id="start_img" src="mic.gif" alt="Start"></button>
+<div class="right">
+<button id="start_button" onclick="startButton(event)">
+  <img id="start_img" src="mic.gif" alt="Start"></button>
+</div>
+<div id="results">
+<span id="final_span" class="final"></span>
+<span id="interim_span" class="interim"></span>
+<p>
+</div>
+<div class="center">
+<div class="sidebyside" style="text-align:right">
+  <button id="copy_button" class="button" onclick="copyButton()">
+    Copy and Paste</button>
+  <div id="copy_info" class="info">
+    Press Control-C to copy text.<br>(Command-C on Mac.)
   </div>
-  <div id="results">
-    <span id="final_span" class="final"></span>
-    <span id="interim_span" class="interim"></span>
-    <p>
+</div>
+<div class="sidebyside">
+  <button id="email_button" class="button" onclick="emailButton()">
+    Create Email</button>
+  <div id="email_info" class="info">
+    Text sent to default email application.<br>
+    (See chrome://settings/handlers to change.)
   </div>
-  <div class="center">
-    <p>
-
+</div>
+<p>
+<div id="div_language">
+  <select id="select_language" onchange="updateCountry()"></select>
+  &nbsp;&nbsp;
+  <select id="select_dialect"></select>
+</div>
+</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
 
