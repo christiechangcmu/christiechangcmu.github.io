@@ -317,8 +317,8 @@ $(document).ready(function() {
     console.log(final_transcript.toLowerCase());
     var result = re.exec(final_transcript.toLowerCase());
     console.log(result);
-    var verb = result[0];
-    var arg = result[0];
+    var verb = result[1];
+    var arg = result[2];
     console.log("verb: " + verb + " arg: " + arg);
     switch(verb) {
       case "click":
