@@ -322,18 +322,7 @@ function startButton(event) {
   showButtons('none');
   start_timestamp = event.timeStamp;
 }
-function showInfo(s) {
-  if (s) {
-    for (var child = info.firstChild; child; child = child.nextSibling) {
-      if (child.style) {
-        child.style.display = child.id == s ? 'inline' : 'none';
-      }
-    }
-    info.style.visibility = 'visible';
-  } else {
-    info.style.visibility = 'hidden';
-  }
-}
+
 var current_style;
 function showButtons(style) {
   if (style == current_style) {
