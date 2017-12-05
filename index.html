@@ -395,13 +395,8 @@ $(document).ready(function() {
       	  });
         break;
       case "enter":
-        console.log("entering text");
-        var text = "";
-        console.log(result.length);
-        // for (int i = 2; i < result.length; i++) {
-        //   text += result[i] + " ";
-        // }
-
+        console.log("entering text: " + arg);
+        $("#command").val(arg);
         break;
       case "scroll":
         console.log("scrolling");
