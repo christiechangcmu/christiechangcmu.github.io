@@ -404,11 +404,11 @@ $(document).ready(function() {
         break;
       case "scroll":
         console.log("scrolling");
-        if(result[3].toLowerCase()=="up") {
+        if(arg.toLowerCase()=="up") {
           $('html, body').animate({
             scrollTop : $(document).scrollTop() - 300
           }, 500);
-        } else if (result[3].toLowerCase()=="down") {
+        } else if (arg.toLowerCase()=="down") {
           $('html, body').animate({
             scrollTop : $(document).scrollTop() - 300
           }, 500);
