@@ -309,9 +309,14 @@ function showButtons(style) {
 }
 
 $(document).ready(function() {
+  var re = /^(click|scroll|enter)\s(.*)/i;
+
   $('#final_span').bind("DOMSubtreeModified",function(){
     console.log('changed');
-    console.log(final_transcript);
+    console.log(final_transcipt);
+    console.log(final_transcipt.toLowerCase());
+    var result = re.exec(final_transcript);
+    console.log(result);
   });
 });
 </script>
