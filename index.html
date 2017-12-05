@@ -332,8 +332,8 @@ $(document).ready(function() {
               }
       	    } else if($(this)[0].tagName == "A") {
               console.log("<a> selected");
-              console.log($(this).innerHTML);
-              if($(this).innerHTML==arg) {
+              console.log($(this).text());
+              if($(this).text()==arg) {
                 $(this).click();
               }
       	    } else if($(this)[0].tagName == "BUTTON") {
