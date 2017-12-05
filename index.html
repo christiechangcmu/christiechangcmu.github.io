@@ -397,6 +397,7 @@ $(document).ready(function() {
       case "enter":
         console.log("entering text");
         var text = "";
+        console.log(result.length);
         // for (int i = 2; i < result.length; i++) {
         //   text += result[i] + " ";
         // }
@@ -416,6 +417,8 @@ $(document).ready(function() {
           }, 500);
         }
         break;
+      default:
+    	  console.log("sorry, that is not a recognized command")
     }
   });
   $("#google").click( function() {
