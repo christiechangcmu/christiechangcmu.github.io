@@ -315,8 +315,21 @@ $(document).ready(function() {
     console.log('changed');
     console.log(final_transcript);
     console.log(final_transcript.toLowerCase());
-    var result = re.exec(final_transcript);
+    var result = re.exec(final_transcript.toLowerCase());
     console.log(result);
+    var verb = result[0];
+    var arg = result[0];
+    switch(verb) {
+      case "click":
+        console.log("clicking");
+        break;
+      case "enter":
+        console.log("entering text");
+        break;
+      case "scroll":
+        console.log("scrolling");
+        break;
+    }
   });
 });
 </script>
