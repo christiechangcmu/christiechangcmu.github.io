@@ -405,15 +405,16 @@ $(document).ready(function() {
       case "scroll":
         console.log("scrolling");
         if(arg.toLowerCase()=="up") {
+          console.log("scrolling up");
           $('html, body').animate({
             scrollTop : $(document).scrollTop() - 300
           }, 500);
         } else if (arg.toLowerCase()=="down") {
+          console.log("scrolling down");
           $('html, body').animate({
             scrollTop : $(document).scrollTop() - 300
           }, 500);
         }
-
         break;
     }
   });
