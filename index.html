@@ -309,7 +309,10 @@ function showButtons(style) {
 }
 
 $(document).ready(function() {
-  console.log("hello");
+  $('#final_span').bind("DOMSubtreeModified",function(){
+    console.log('changed');
+    console.log($('#final_span'));
+  });
 });
 </script>
 
